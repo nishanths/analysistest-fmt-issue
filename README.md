@@ -2,7 +2,7 @@ This repository demonstrates an issue with `analysistest`.
 
 ## Explanation
 
-The file `analyzer.go` defines an `analysis.Analyzer` that produces.
+The file `analyzer.go` defines an `analysis.Analyzer`.
 
 When operating on the testdata file `normalpkg.go`, the analyzer (due to buggy
 behavior) produces the following syntactically invalid Go output when fixes are
