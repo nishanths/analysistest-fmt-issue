@@ -8,7 +8,7 @@ import (
 	"golang.org/x/tools/go/ast/inspector"
 )
 
-// RemoveVars is an Analyzer whose suggested fix is intended to removes all top-level
+// RemoveVars is an Analyzer whose suggested fix is intended to remove all top-level
 // variable/constant declarations. However, it is buggy and produces broken fixes.
 var RemoveVars = &analysis.Analyzer{
 	Name:     "analysistestissue",

@@ -1,8 +1,8 @@
-This repository demonstrates an issue with `analysistest`.
+This repository demonstrates an issue with `analysistest`. See https://github.com/golang/go/issues/47118.
 
 ## Explanation
 
-The file `analyzer.go` defines an `analysis.Analyzer`.
+The file `analyzer.go` defines an `analysis.Analyzer`. The test in `analyzer_test.go` uses `analysistest.RunWithSuggestedFixes`.
 
 When operating on the testdata file `normalpkg.go`, the analyzer (due to buggy
 behavior) produces the following syntactically invalid Go output when fixes are
@@ -27,4 +27,3 @@ But running:
 go test
 ```
 incorrectly results in a PASS, even though the output and the golden file contents do not match.
-
