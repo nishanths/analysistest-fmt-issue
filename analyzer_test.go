@@ -7,5 +7,5 @@ import (
 )
 
 func TestAnalyzer(t *testing.T) {
-	analysistest.RunWithSuggestedFixes(t, analysistest.TestData(), RemoveVars, "normalpkg")
+	analysistest.RunWithSuggestedFixes(t, analysistest.TestData(), RemoveVarsAnalyzer, "normal/...")
 }

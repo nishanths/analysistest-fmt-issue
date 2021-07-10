@@ -1,4 +1,4 @@
-package normalpkg
+package normal
 
 // want "^removing$"
 // want "^removing$"
