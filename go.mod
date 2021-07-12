@@ -1,4 +1,4 @@
-module github.com/nishanths/analysistestissue
+module github.com/nishanths/analysistest-fmt-issue
 
 go 1.16
 

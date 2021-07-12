@@ -1,4 +1,4 @@
-package analysistestissue
+package analysistest_fmt_issue
 
 import (
 	"testing"

@@ -1,12 +1,13 @@
-This repository demonstrates an issue with `analysistest`. See https://github.com/golang/go/issues/47118.
+This repository demonstrates an issue with `analysistest`.
+
+https://github.com/golang/go/issues/47118.
 
 ## Explanation
 
-The file `analyzer.go` defines an `analysis.Analyzer`.
+* `analyzer.go` defines an `analysis.Analyzer`.
+* `analyzer_test.go` runs a test on the Analyzer using `analysistest.RunWithSuggestedFixes()`.
 
-The test in `analyzer_test.go` uses `analysistest.RunWithSuggestedFixes()`.
-
-When operating on the testdata file `normal.go`, the analyzer (due to buggy
+When operating on the testdata file `normal.go`, the Analyzer (due to buggy
 behavior) produces the following syntactically invalid Go output when fixes are
 applied:
 ```go

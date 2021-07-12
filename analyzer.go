@@ -1,4 +1,4 @@
-package analysistestissue
+package analysistest_fmt_issue
 
 import (
 	"go/ast"
@@ -11,7 +11,7 @@ import (
 // RemoveVarsAnalyzer is an Analyzer whose suggested fix is intended to remove all top-level
 // variable/constant declarations. However, it is buggy and produces broken fixes.
 var RemoveVarsAnalyzer = &analysis.Analyzer{
-	Name:     "analysistestissue",
+	Name:     "analysistest_fmt_issue",
 	Doc:      "shows an issue with analysistest",
 	Run:      run,
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
